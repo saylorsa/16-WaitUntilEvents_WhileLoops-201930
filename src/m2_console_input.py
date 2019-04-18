@@ -34,7 +34,7 @@ def double_a_float():
     # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
-    jif = float(input('Give me a number and I will double it:'))
+    jif = float(input('Enter a number:'))
     print(2*jif)
 
 
@@ -64,9 +64,12 @@ def print_an_integer_many_times():
          10
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    jeff = int(input('Enter an integer:'))
+    for k in range(jeff):
+        print(2*jeff)
 
 
 def print_an_integer_many_times_on_one_row():
