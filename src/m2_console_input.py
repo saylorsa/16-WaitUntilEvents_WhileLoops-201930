@@ -31,9 +31,11 @@ def double_a_float():
          -6.28
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    jif = float(input('Give me a number and I will double it:'))
+    print(2*jif)
 
 
 def print_an_integer_many_times():
