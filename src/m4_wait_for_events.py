@@ -115,7 +115,7 @@ def sum_until_prime_input():
 def run_test_next_prime():
     """ Tests the   next_prime    function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this TEST function.
+    # DONE: 3. Implement this TEST function.
     #   It TESTS the  wait_for_prime  function defined below.
     #   Include at least  ** 6 **  tests. (We supplied 5 tests for you.)
     #
@@ -172,14 +172,17 @@ def run_test_next_prime():
     print('Actual:  ', actual)
     print('TEST ENDED!')
 
-    # TODO 3 (continued):
+    # DONE 3 (continued):
     #   PUT YOUR TEST   ** IN THE SPACE BETWEEN **   the
     #   print('TEST STARTED!' ...) and print('TEST ENDED') lines below.
 
     # Test 6:
     print()
     print('TEST STARTED!  Has it ended?')
-
+    expected = 5
+    actual = next_prime(4)
+    print('Expected:', expected)
+    print('Actual:  ', actual)
     print('TEST ENDED!')
 
 
