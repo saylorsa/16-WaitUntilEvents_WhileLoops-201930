@@ -99,9 +99,17 @@ def sum_until_prime_input():
          The sum of the input integers is: 167
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+
+    total = 0
+    while True:
+        n = int(input('Enter an integer greater than 1: '))
+        total = total + n
+        if is_prime(n) == True:
+            break
+    print('The sum of the input integers is: ' + str(total))
 
 
 def run_test_next_prime():
