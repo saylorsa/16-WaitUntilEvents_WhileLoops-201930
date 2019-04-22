@@ -201,12 +201,17 @@ def next_prime(m):
       :type m: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
     #    -- Use (call) the   is_prime   function above appropriately.
     # -------------------------------------------------------------------------
+    num = m
+    while True:
+        if is_prime(num) == True:
+            return num
+        num = num + 1
 
 
 def run_test_prime_gap():
