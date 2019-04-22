@@ -343,13 +343,18 @@ def prime_gap(m):
       :type m: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # IMPLEMENTATION REQUIREMENT:
     #    -- Use (call) the   *** next_prime ***   function
     #       (that you implemented) appropriately.
     # -------------------------------------------------------------------------
+    num = 2
+    while True:
+        if (next_prime(next_prime(num) + 1) - next_prime(num)) >= m:
+            return next_prime(num)
+        num = num + 1
 
 
 def run_test_wait_for_sum_of_cubes():
